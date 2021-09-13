@@ -2,6 +2,14 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
+from django.urls import reverse_lazy
+from django.views.generic.edit import DeleteView
+from django.contrib.auth.models import User
+
+
+class ProfileDeleteView(DeleteView):
+    model = User
+    success_url = reverse_lazy('register')
 
 
 def register(request):

@@ -1,7 +1,7 @@
 {% extends "users/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-        <div class="content-section col-lg-4 col-md-8">
+        <div class="content-section col-lg-4 col-md-8 col-xs-4">
 
             <form method="POST">
                 {% csrf_token %}
@@ -20,7 +20,6 @@
             <div class="border-top pt-3 pb-3">
                 <small class="text-muted">
                     Already Have An Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a>
-                    <a href="{% url 'social:begin' 'facebook' %}">Login with Facebook</a>
                 </small>
             </div>
         </div>

@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-ucw#g&)(@hfjkx!_-y#2&k*u=4iht25kx#14p2#y%=5wp&t*w='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['Django_users_app.herokuapp.com']
 
@@ -133,11 +133,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
-
-STATIC_URL = '/static/'
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
@@ -158,6 +153,10 @@ EMAIL_HOST_PASSWORD = 'Dirtydawg2!'
 
 SOCIAL_AUTH_FACEBOOK_KEY = '137200881882147'
 SOCIAL_AUTH_FACEBOOK_SECRET = '7562537bba58e5fc39070a32752c7cb2'
+
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

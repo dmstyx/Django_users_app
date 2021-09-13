@@ -1,0 +1,18 @@
+body{
+    background-image: url('https://images.unsplash.com/photo-1618004912476-29818d81ae2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3059&q=80');
+    background-size: cover;
+}
+
+.content-section{
+    background-color:whitesmoke;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.img-fluid{
+    max-width: 25%
+}
